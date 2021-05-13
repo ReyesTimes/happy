@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Black Diamond';
+    src: url('BlackDiamond.eot');
+    src: url('BlackDiamond.eot?#iefix') format('embedded-opentype'),
+        url('BlackDiamond.woff2') format('woff2'),
+        url('BlackDiamond.woff') format('woff'),
+        url('BlackDiamond.ttf') format('truetype'),
+        url('BlackDiamond.svg#BlackDiamond') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

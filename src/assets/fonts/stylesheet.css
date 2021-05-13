@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'Black Diamond';
+    src: url('BlackDiamond.eot');
+    src: url('BlackDiamond.eot?#iefix') format('embedded-opentype'),
+        url('BlackDiamond.woff2') format('woff2'),
+        url('BlackDiamond.woff') format('woff'),
+        url('BlackDiamond.ttf') format('truetype'),
+        url('BlackDiamond.svg#BlackDiamond') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Greycliff CF';
+    src: url('GreycliffCF-Bold.eot');
+    src: url('GreycliffCF-Bold.eot?#iefix') format('embedded-opentype'),
+        url('GreycliffCF-Bold.woff2') format('woff2'),
+        url('GreycliffCF-Bold.woff') format('woff'),
+        url('GreycliffCF-Bold.ttf') format('truetype'),
+        url('GreycliffCF-Bold.svg#GreycliffCF-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Greycliff CF Demi';
+    src: url('GreycliffCF-DemiBold.eot');
+    src: url('GreycliffCF-DemiBold.eot?#iefix') format('embedded-opentype'),
+        url('GreycliffCF-DemiBold.woff2') format('woff2'),
+        url('GreycliffCF-DemiBold.woff') format('woff'),
+        url('GreycliffCF-DemiBold.ttf') format('truetype'),
+        url('GreycliffCF-DemiBold.svg#GreycliffCF-DemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Greycliff CF';
+    src: url('GreycliffCF-Heavy.eot');
+    src: url('GreycliffCF-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('GreycliffCF-Heavy.woff2') format('woff2'),
+        url('GreycliffCF-Heavy.woff') format('woff'),
+        url('GreycliffCF-Heavy.ttf') format('truetype'),
+        url('GreycliffCF-Heavy.svg#GreycliffCF-Heavy') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+

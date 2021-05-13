@@ -1,0 +1,69 @@
+.bg-black{
+  background-color: $black;
+  color: #ffff;
+  p,
+  span,
+  li,
+  a{
+    color: #ffff;
+  }
+}
+
+
+.brandLogo {
+    width: 33%;
+    height: 50px;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    
+    &.b1 {
+        background-image: url(../src/assets/images/chedraui.png);
+    }
+    &.b2 {
+        background-image: url(../src/assets/images/vegas.png);
+    }
+     &.b3 {
+        background-image: url(../src/assets/images/femsa.png);
+    }
+      &.b4 {
+        background-image: url(../src/assets/images/nikon.png);
+    }
+      &.b5 {
+        background-image: url(../src/assets/images/posadas.png);
+    }
+      &.b6 {
+        background-image: url(../src/assets/images/casa.png);
+    }
+      &.b7 {
+        background-image: url(../src/assets/images/klenex.png);
+    }
+      &.b8 {
+        background-image: url(../src/assets/images/prisa.png);
+    }
+      &.b9 {
+        background-image: url(../src/assets/images/fox.png);
+    }
+      &.b10 {
+        background-image: url(../src/assets/images/uniliver.png);
+    }
+      &.b11 {
+        background-image: url(../src/assets/images/nfl.png);
+    }
+      &.b13 {
+        background-image: url(../src/assets/images/bunge.png);
+    }
+    
+}
+
+.brandsVideoWrp {
+    height: 80vh;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    button{
+      color:#ffff;
+    }
+
+}
