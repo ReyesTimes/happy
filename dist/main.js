@@ -1,1 +1,1 @@
-(()=>{"use strict";console.log("TEST",example)})();
+(()=>{"use strict";document.addEventListener("DOMContentLoaded",(function(t){var e=document.querySelector(".videosListWrp"),n=document.querySelector(".leftButton"),r=document.querySelector(".rightButton"),c=1;function o(t){if(function(t,e){return"left"===t&&e>1||"right"===t&&e<3}(t,c)){"left"===t&&(c-=1);var n=265*c-("left"===t?265:0);e.style.transform="translateX(-".concat(n,"px)"),"right"===t&&(c+=1)}}n.addEventListener("click",(function(){o("left")})),r.addEventListener("click",(function(){o("right")}))}))})();

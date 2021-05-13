@@ -1,13 +1,14 @@
-.mainCarousel{
+.mainCarousel {
   width: 100%;
-    overflow-y: hidden;
-  .videosListWrp{
+  overflow-y: hidden;
+  .videosListWrp {
     width: 180%;
-        .video{
-            display: inline-block;
-            /* width: 7%; */
-            max-width: 260px;
-            padding: 0 0.5%;
-        }
+    transition: 350ms all ease-in;
+    .video {
+      display: inline-block;
+      /* width: 7%; */
+      max-width: 260px;
+      padding: 0 0.5%;
     }
+  }
 }
