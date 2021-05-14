@@ -63,8 +63,9 @@ nav {
       margin: 0 2%;
       @media (max-width: $mobile-lg) {
         text-align: center;
-        font-size: 3em;
-        margin: 0 5%;
+    font-size: 2em;
+    padding: 3% 0;
+    margin: 0 5%;
       }
     }
   }
