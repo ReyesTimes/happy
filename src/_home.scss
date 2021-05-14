@@ -79,7 +79,23 @@
     
 }
 
-.contactWrp{
-   height: 50vh;
-    
-}
+  .contactWrp{
+     height: 50vh;
+
+     .icons{
+        display: inline-block;
+        width: 33%;
+        height: 50px;
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+
+           &.tel{
+            background-image: url(../src/assets/images/cel.svg);
+          }
+          &.email{
+            background-image: url(../src/assets/images/mail.svg);
+          }
+     } 
+  }
+  

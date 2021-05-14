@@ -12,9 +12,14 @@ header{
 	position: fixed;
 	height: 11vh;
 	z-index: 6;
+	@media (max-width: $mobile-lg){
+		position: relative;
+		height: 100%;
+	}
 	.icon{
 		display: none;
 		@media (max-width: $mobile-lg){
+			
 			display: block;
 			width: 35px;
 			height: 35px;
@@ -41,14 +46,18 @@ nav{
     
     @media (max-width: $mobile-lg){
     	width: 100%;
-    	height: 100%
+    	height: 100%;
     }
     ul{
         width: 30%;
         max-width: 160px;
         display: block;
         @media (max-width: $mobile-lg){
+        	 width: 100%;
+        	 height: 100vh;
+        	 background-color: $black;
 	    	text-align: center;
+	    	    max-width: 100%;
 	    }
     
       li{
