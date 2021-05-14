@@ -1,4 +1,5 @@
 import initVideo from "./video";
+import initOpenMenu from "./menu";
 
 import "./example.scss";
 
@@ -11,13 +12,24 @@ import "./example.scss";
 
     let counter = 1;
 
-    initVideo();
+    initVideo(setCounter);
     initEvnts();
+    initOpenMenu();
 
     function isAlowedToMove(side, counter) {
       return (
         (side === "left" && counter > 1) || (side === "right" && counter < 3)
       );
+    }
+
+    function setCounter(n) {
+      if (counter !== parseInt(n) && n < 4) {
+        const side = counter < n ? "left" : "right";
+        const width = getVideoWidth();
+        counter = parseInt(n);
+
+        translateContainer(width, side);
+      }
     }
 
     function getVideoWidth() {
@@ -43,16 +55,6 @@ import "./example.scss";
         filler.style.width = "33%";
         counter = 1;
       });
-
-      document
-        .querySelector(".mainCarousel")
-        .addEventListener("scroll", function (e) {
-          const container = e.target;
-          const width = container.scrollWidth - container.clientWidth;
-          const percentage = container.scrollLeft / width;
-
-          console.log(percentage);
-        });
     }
 
     function moveContainer(side) {

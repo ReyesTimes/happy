@@ -1,4 +1,4 @@
-export default function initVideo() {
+export default function initVideo(setCounter) {
   const videos = document.querySelectorAll(".video");
 
   videos.forEach((videoLi) => {
@@ -15,6 +15,7 @@ export default function initVideo() {
       overlay.style.opacity = "0";
 
       restartStylesVideo(id);
+      setCounter(id);
     });
   });
 
