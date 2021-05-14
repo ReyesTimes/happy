@@ -11,7 +11,7 @@ import "./example.scss";
 
     let counter = 1;
 
-    initVideo();
+    initVideo(counter);
     initEvnts();
 
     function isAlowedToMove(side, counter) {
