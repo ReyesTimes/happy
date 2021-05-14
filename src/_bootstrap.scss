@@ -4,11 +4,22 @@
     padding: 0;
 }
 
+
 .container-fluid {
+     display: flex;
     width: 100%;
     margin: 0;
     padding: 0;
+     width: 100%;
+     max-width: 1700px;
+    margin: 0 auto;
+    padding: 0 6%;
+    @media (max-width: 1500px){
+        max-width: 1400px;  
+    }
 }
+
+
 
 .d-inline-block {
     display: inline-block !important;
@@ -302,9 +313,6 @@
 
 
 
-
-
-
-
+ 
 
 
