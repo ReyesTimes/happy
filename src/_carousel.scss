@@ -3,7 +3,7 @@
   overflow-y: hidden;
   .videosListWrp {
     width: 180%;
-    transition: 350ms all ease-in;
+    transition: 250ms all ease-in;
     .video {
       display: inline-block;
       /* width: 7%; */
@@ -13,32 +13,29 @@
   }
 }
 
-
-.video{
-  p{
+.video {
+  p {
     margin-top: 2%;
-    
   }
 }
 
-.progress{
+.progress {
   width: 100%;
-    display: block;
-    position: relative;
-    margin-top: 3%;
+  display: block;
+  position: relative;
+  margin-top: 3%;
 
-    .filler{
-      position: absolute;
-      
-      left: 0;
-      bottom: 0;
-      display: block;
-      width: 60%;
-      height: 3px;
-      background-color: $yellow;
-    }
-    
-  
+  .filler {
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 33%;
+    height: 3px;
+    background-color: $yellow;
+    transition: 250ms width ease-in;
+  }
 }
 
 .invisible-scrollbar::-webkit-scrollbar {
