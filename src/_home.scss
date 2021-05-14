@@ -1,10 +1,14 @@
 .brandLogo {
-    width: 33%;
-    height: 50px;
+    width: 23%;
+    height: 150px;
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
     display: inline-block;
+    @media (max-width: $mobile-lg){
+        width: 48%;
+    height: 100px
+    }
     
     &.b1 {
         background-image: url(../src/assets/images/chedraui.png);
@@ -39,10 +43,25 @@
       &.b11 {
         background-image: url(../src/assets/images/nfl.png);
     }
-      &.b13 {
+      &.b12 {
         background-image: url(../src/assets/images/bunge.png);
     }
     
+}
+
+.textureWrp{
+   width: 30%;
+    height: 30%;
+    /* height: 100%; */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: inline-block;
+  background-image: url(../src/assets/images/texture.png);
+  background-color: $black;
+  h2{
+    color: #fff;
+  }
 }
 
 
@@ -84,8 +103,9 @@
 
      .icons{
         display: inline-block;
-        width: 33%;
-        height: 50px;
+        width: 73px;
+    height: 55px;
+vertical-align: middle;
         background-size: contain;
         background-position: center center;
         background-repeat: no-repeat;
@@ -99,3 +119,22 @@
      } 
   }
   
+  .arrow{
+        display: inline-block;
+        width: 32px;
+    margin-top: 3%;
+    height: 35px;
+        vertical-align: middle;
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+
+
+          &.leftButton{
+            background-image: url(../src/assets/images/arrow-l.svg);
+          }
+
+          &.rightButton{
+            background-image: url(../src/assets/images/arrow-r.svg);
+          }
+  }
