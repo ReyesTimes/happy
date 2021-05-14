@@ -98,6 +98,13 @@ a {
     font-size: 3em;
     font-family:$bold;
     line-height: 1.2; 
+    &.happy-text{
+        margin-bottom: 5%;
+        .people{
+
+            margin-left: 10%;
+        }
+    }
     @media (max-width: $mobile-lg){
         font-size: 1.9em;
         line-height: 1; 
@@ -114,4 +121,7 @@ a {
     justify-items: center;
     align-content: center;
     align-items: center;
+}
+header{
+        border-bottom: solid 2px;
 }
