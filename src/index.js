@@ -29,6 +29,7 @@ import "./example.scss";
         counter = parseInt(n);
 
         translateContainer(width, side);
+        filler.style.width = `${counter * 33.33333333}%`;
       }
     }
 
