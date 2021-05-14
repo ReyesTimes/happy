@@ -1,3 +1,5 @@
+import initVideo from "./video";
+
 import "./example.scss";
 
 (function () {
@@ -6,7 +8,10 @@ import "./example.scss";
     const videosListWrp = document.querySelector(".videosListWrp");
     const leftButton = document.querySelector(".leftButton");
     const rightButton = document.querySelector(".rightButton");
+
     let counter = 1;
+
+    initVideo();
 
     leftButton.addEventListener("click", function () {
       moveContainer("left");
