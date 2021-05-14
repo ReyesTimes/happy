@@ -8,6 +8,7 @@ import "./example.scss";
     const videosListWrp = document.querySelector(".videosListWrp");
     const leftButton = document.querySelector(".leftButton");
     const rightButton = document.querySelector(".rightButton");
+    const filler = document.querySelector(".filler");
 
     let counter = 1;
 
@@ -33,6 +34,8 @@ import "./example.scss";
         if (side === "right") {
           counter = counter + 1;
         }
+
+        filler.style.width = `${counter * 33.33333333}%`;
       }
     }
 

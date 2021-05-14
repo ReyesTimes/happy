@@ -12,3 +12,32 @@
     }
   }
 }
+
+.video {
+  p {
+    margin-top: 2%;
+  }
+}
+
+.progress {
+  width: 100%;
+  display: block;
+  position: relative;
+  margin-top: 3%;
+
+  .filler {
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 33%;
+    height: 3px;
+    background-color: $yellow;
+    transition: 250ms width ease-in;
+  }
+}
+
+.invisible-scrollbar::-webkit-scrollbar {
+  display: none;
+}
