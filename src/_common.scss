@@ -34,6 +34,9 @@ textarea {
 a {
     text-decoration: none;
     color:#ffff;
+    &:hover{
+      color:$yellow;
+    }
 }
 
 figure {
@@ -52,18 +55,63 @@ a {
     }
 }
 .yellow{
-    color: $yellow;
+    color: $yellow !important;
 }
 
 .title{
+    position: relative;
     h2{
         font-family: $heavy;
         font-size: 4em;
+    text-transform: uppercase;
 
     }
     h3{
         font-family: $grafo;
         color: $yellow;
         font-size: 3em;
+        position: absolute;
+    left: 17%;
+    top: 43%;
     }
+    .note{
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+
+
+.bg-black{
+  background-color: $black;
+  color: #ffff;
+  p,
+  span,
+  li,
+  a{
+    color: #ffff;
+    
+  }
+}
+
+.bigText{
+    font-size: 3em;
+    font-family:$bold;
+    line-height: 1.2; 
+    @media (max-width: $mobile-lg){
+        font-size: 1.9em;
+        line-height: 1; 
+    }
+}
+.all-center{
+     justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.all-between{
+   justify-content: space-between;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
 }

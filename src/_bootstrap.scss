@@ -225,6 +225,11 @@
     margin-left: 1.5rem;
 }
 
+.t-center{
+    text-align: center !important;
+    display: block;
+}
+
 .ml-auto,
 .mx-auto {
     margin-left: auto !important;
@@ -279,6 +284,7 @@
 .img-fluid{
   max-width: 100%;
     height: auto;
+    margin: auto;
     img{
         width: 100%;
         height: auto;

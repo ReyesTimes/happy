@@ -2,10 +2,71 @@ header, footer{
 	background-color: $black;
 	color: #ffff;
 	.logo{
-		height: 75px;
+		max-width: 260px;
+		margin: unset;
+
 
 	}
 }
+header{
+	position: fixed;
+	height: 11vh;
+	z-index: 6;
+	.icon{
+		display: none;
+		@media (max-width: $mobile-lg){
+			display: block;
+			width: 35px;
+			height: 35px;
+			background-size: contain;
+	        background-position: center center;
+	        background-repeat: no-repeat;
+	        &.open{
+	        	background-image: url(../src/assets/images/menu1.svg);
+	        }
+	        &.close{
+	        	background-image: url(../src/assets/images/menu-mob.svg);
+	        }
+
+		}
+	}
+}
+
+nav{
+    justify-content: space-between;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    padding: 0 5%;
+    
+    @media (max-width: $mobile-lg){
+    	width: 100%;
+    	height: 100%
+    }
+    ul{
+        width: 30%;
+        max-width: 160px;
+        display: block;
+        @media (max-width: $mobile-lg){
+	    	text-align: center;
+	    }
+    
+      li{
+        display: inline-block;
+        margin: 0 2%;
+        @media (max-width: $mobile-lg){
+	    	text-align: center;
+	    	font-size: 3em;
+	    	margin: 0 5%;
+	    }
+
+      }
+    }
+    .logo{
+      max-width: 150px;
+    }
+}
+
 
 footer{
 	height: 25vh;

@@ -13,20 +13,21 @@
         <header class="container">
             <nav class="row">
                 <figure class="img-fluid logo" ><img src="src/assets/images/cmvrr-logo.svg" alt="logo CMV"></figure>
-                <ul class="">
+                <ul class="menu">
                     <li><a href="">Proyectos</a></li>
                     <li><a href="#contact">Contacto</a></li>
                 </ul>
+                <button class="icon open"> </button>
             </nav>
         </header>
-            <div class="videoWrp">
+            <div class="videoWrp row all-between">
                 <div class="title titleTexture">
                     <h2>WE RUN ON</h2>
                     <h3>Happiness</h3>
                 </div>
             </div>
             <section class="brandsWrp">
-                <h1>
+                <h1 class="bigText">
                     <p>"Happy Brands by</p>
                     <p>happy People</p>
                 </h1>
@@ -48,16 +49,19 @@
             </section>
          <!--    SECCIÓN CARRUSEL -->
             <section class="brandsVideoWrp row bg-black">
-                <div class="title col-4">
-                    <h2>Happy </h2>
-                    <h3>Brands</h3>
-                    <p class="yellow">Pensamos en maneras en que las marcas transformen la historia y se adueñen de ella.</p>
+                <div class="col-4">
+                    <div class="title">
+                        <h2>Happy </h2>
+                        <h3>Brands</h3>
+                    </div>
+                    <p class="note">Pensamos en maneras en que las marcas transformen la historia y se adueñen de ella.</p>
                 </div>
                 <div class="col-7 mx-auto">
                     <div class="mainCarousel invisible-scrollbar">
                         <ul class="videosListWrp">
                             <li class="video  ">
-                                <button>play</button>
+                                <button class="btn-play"><span class="icon"></span></button>
+                                <div class="overlay"></div>
                                 <video src="src/assets/video/brands/chedraui.mp4"></video>
                                 <p>Chedraui</p>
                             </li>
@@ -88,14 +92,16 @@
                 </div>
 
             </section>
-            <section class="rrWrp row">
-                <p class="col-6">Somos una agencia <br> independiente, con <br> feeling global.</p>
+             <!--    sec global -->
+            <section class="rrWrp row all-center">
+                <p class="bigText col-6">Somos una agencia <br> independiente, con <br> feeling global.</p>
                 <div class="col-6">
-                    <figure class="img-fluid logo col-5" ><img src="src/assets/images/rr-logo.svg" alt="logo r&r"></figure>
-                    <span class="yellow">Austin, Denver, Las Vegas, Los Angeles, Mexico City, Phoenix, Reno, Salt Lake City, Washington DC</span>
+                    <figure class="img-fluid logo" ><img src="src/assets/images/rr-logo-p.png" alt="logo r&r"></figure>
+                    <span class="yellow t-center">Austin, Denver, Las Vegas, Los Angeles, Mexico City, Phoenix, <br> Reno, Salt Lake City, Washington DC</span>
                 </div>
             </section>
-            <section class="doWrp row bg-black">
+               <!--    sec us -->
+            <section class="doWrp row all-center bg-black ">
                 <div class="title col-4">
                     <h2>¿Qué </h2>
                     <h3>Hacemos?</h3>
@@ -112,20 +118,21 @@
                     <li>Relaciones públicas</li>
                 </ul>
             </section>
-            <div id="contact" class="contactWrp row">
-                <p class="col-12">Contacto</p>
-                <div class="6">
+               <!--    sec contact -->
+            <div id="contact" class="contactWrp row all-center">
+                <p class="col-12 bigText">Contacto</p>
+                <div class="col-6">
                     <span class="icon tel"></span>
                     <p>dvelasquez@cmvrr.com</p>
                 </div>
-                <div class="6">
+                <div class="col-6">
                     <span class="icon email"></span>
                     <p>5530982950</p>
                 </div>
             </div>
-            <footer class="row bg-black">
-                <figure class="img-fluid logo col-3" ><img src="src/assets/images/cmvrr-logo.svg" alt="logo r&r"></figure>
-                <p class="col-5">©2021 CMV R&R Partners. All rights reserved.</p>
+            <footer class="row bg-black all-between ">
+                <figure class="img-fluid logo " ><img src="src/assets/images/cmvrr-logo.svg" alt="logo r&r"></figure>
+                <p class="t-center">©2021 CMV R&R Partners. <br> All rights reserved.</p>
             </footer>
         </main>
   </body>
