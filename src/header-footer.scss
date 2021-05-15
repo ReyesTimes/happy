@@ -1,3 +1,4 @@
+
 header,
 footer {
   background-color: $black;
@@ -36,6 +37,7 @@ header {
 }
 
 nav {
+  width: 100%;
   justify-content: space-between;
   align-content: center;
   justify-items: center;

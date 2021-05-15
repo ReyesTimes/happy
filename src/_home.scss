@@ -52,6 +52,7 @@
 .videoWrp{
    height: 80vh;
    position: relative;
+   display: block;
     
   .textureWrp{
      width: 100%;
@@ -153,3 +154,5 @@ vertical-align: middle;
             background-image: url(../src/assets/images/arrow-r.svg);
           }
   }
+
+
