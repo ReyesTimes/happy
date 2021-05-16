@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width" />
     <title>CMV|R&R</title>
     <link rel="stylesheet" href="dist/main.css"></link>
   </head>
@@ -17,7 +17,7 @@
                         <img src="src/assets/images/cmvrr-logo.svg" alt="logo CMV">
                     </figure>
                     <button class="icon close"></button>
-                    <ul class="menu">
+                    <ul class="menu" style="display: none;">
                         <li><a href="">Proyectos</a></li>
                         <li><a href="#contact">Contacto</a></li>
                     </ul>
@@ -26,7 +26,7 @@
         </header>
             <div class="videoWrp row all-between">
                  <div class="textureWrp"></div>
-                <video src="src/assets/video/cmv_demo.mp4" width="100%"></video>
+               <!--  <video src="src/assets/video/cmv_demo.mp4" width="100%"></video> -->
                 <div class="black-block">
                     <div class="title titleTexture">
                         <h2>WE RUN ON</h2>
@@ -34,103 +34,112 @@
                     </div>
                 </div>
             </div>
-            <section class="brandsWrp">
-                <h1 class="bigText happy-text">
-                    <p>"Happy Brands by</p>
-                    <p class="people">Happy People</p>
-                </h1>
-                <ul class="">
-                    <li class="img-fluid brandLogo b1"></li>
-                    <li class="img-fluid brandLogo b2"></li>
-                    <li class="img-fluid brandLogo b3"></li>
-                    <li class="img-fluid brandLogo b4"></li>
-                    <li class="img-fluid brandLogo b5"></li>
-                    <li class="img-fluid brandLogo b6"></li>
-                    <li class="img-fluid brandLogo b7"></li>
-                    <li class="img-fluid brandLogo b8"></li>
-                    <li class="img-fluid brandLogo b9"></li>
-                    <li class="img-fluid brandLogo b10"></li>
-                    <li class="img-fluid brandLogo b11"></li>
-                    <li class="img-fluid brandLogo b12"></li>
-                    <li class="img-fluid brandLogo b13"></li>
-                </ul>
+            <section class="brandsWrp row all-center">
+                <div class="container-fluid">
+                    <h1 class="bigText happy-text">
+                        <p>"Happy Brands by</p>
+                        <p class="people">Happy People</p>
+                    </h1>
+                </div>
+                <div class="container-fluid">
+                    <ul class="col-12">
+                        <li class="img-fluid brandLogo b1"></li>
+                        <li class="img-fluid brandLogo b2"></li>
+                        <li class="img-fluid brandLogo b3"></li>
+                        <li class="img-fluid brandLogo b4"></li>
+                        <li class="img-fluid brandLogo b5"></li>
+                        <li class="img-fluid brandLogo b6"></li>
+                        <li class="img-fluid brandLogo b7"></li>
+                        <li class="img-fluid brandLogo b8"></li>
+                        <li class="img-fluid brandLogo b9"></li>
+                        <li class="img-fluid brandLogo b10"></li>
+                        <li class="img-fluid brandLogo b11"></li>
+                        <li class="img-fluid brandLogo b12"></li>
+                        <li class="img-fluid brandLogo b13"></li>
+                    </ul>
+                </div>
             </section>
          <!--    SECCIÓN CARRUSEL -->
             <section class="brandsVideoWrp row bg-black">
-
-                <div class="col-4">
-                    <div class="title">
-                        <h2>Happy </h2>
-                        <h3>Brands</h3>
+                <div class="container-fluid">
+                    <div class="col-4 col-sm-12">
+                        <div class="title">
+                            <h2>Happy </h2>
+                            <h3>Brands</h3>
+                        </div>
+                        <p class="note">Pensamos en maneras en que las marcas transformen la historia y se adueñen de ella.</p>
                     </div>
-                    <p class="note">Pensamos en maneras en que las marcas transformen la historia y se adueñen de ella.</p>
-                </div>
-                <div class="col-7 mx-auto">
-                    <div class="mainCarousel invisible-scrollbar">
-                        <ul class="videosListWrp">
-                            <li class="video" data-id="1">
-                                <button class="btn-play"><span class="icon"></span></button>
-                                <div class="overlay"></div>
-                                <video src="src/assets/video/brands/chedraui.mp4"></video>
-                                <p>Chedraui</p>
-                            </li>
-                            <li class="video" data-id="2">
-                                <button class="btn-play"><span class="icon"></span></button>
-                                <div class="overlay"></div>
-                                <video src="src/assets/video/brands/femsa.mp4"></video>
-                                <p>Femsa</p>
-                            </li>
-                            <li class="video" data-id="3">
-                                <button class="btn-play"><span class="icon"></span></button>
-                                <div class="overlay"></div>
-                                <video src="src/assets/video/brands/nikon.mp4"></video>
-                                <p>Nikon</p>
+                    <div class="col-7 col-sm-12 mx-auto">
+                        <div class="mainCarousel invisible-scrollbar">
+                            <ul class="videosListWrp">
+                                <li class="video" data-id="1">
+                                    <button class="btn-play"><span class="icon"></span></button>
+                                    <div class="overlay"></div>
+                                    <video src="src/assets/video/brands/chedraui.mp4"></video>
+                                    <p>Chedraui</p>
                                 </li>
-                            <li class="video" data-id="4">
-                                <button class="btn-play"><span class="icon"></span></button>
-                                <div class="overlay"></div>
-                                <video src="src/assets/video/brands/posadas.mp4"></video>
-                                <p>Posadas</p>
-                            </li>
-                            <li class="video" data-id="5">
-                                <button class="btn-play"><span class="icon"></span></button>
-                                <div class="overlay"></div>
-                                <video src="src/assets/video/brands/vegas.mp4"></video>
-                                <p>Las Vegas</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="progress">
-                        <span class="filler"></span> 
-                    </div>
-                    <button class="arrow leftButton"></button>
-                    <button class="arrow rightButton"></button>
+                                <li class="video" data-id="2">
+                                    <button class="btn-play"><span class="icon"></span></button>
+                                    <div class="overlay"></div>
+                                    <video src="src/assets/video/brands/femsa.mp4"></video>
+                                    <p>Femsa</p>
+                                </li>
+                                <li class="video" data-id="3">
+                                    <button class="btn-play"><span class="icon"></span></button>
+                                    <div class="overlay"></div>
+                                    <video src="src/assets/video/brands/nikon.mp4"></video>
+                                    <p>Nikon</p>
+                                    </li>
+                                <li class="video" data-id="4">
+                                    <button class="btn-play"><span class="icon"></span></button>
+                                    <div class="overlay"></div>
+                                    <video src="src/assets/video/brands/posadas.mp4"></video>
+                                    <p>Posadas</p>
+                                </li>
+                                <li class="video" data-id="5">
+                                    <button class="btn-play"><span class="icon"></span></button>
+                                    <div class="overlay"></div>
+                                    <video src="src/assets/video/brands/vegas.mp4"></video>
+                                    <p>Las Vegas</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="progress">
+                            <span class="filler"></span> 
+                        </div>
+                        <button class="arrow leftButton"></button>
+                        <button class="arrow rightButton"></button>
 
+                    </div>
+                    
                 </div>
+
 
             </section>
              <!--    sec global -->
             <section class="rrWrp row all-center">
-                <p class="bigText col-6">Somos una agencia <br> independiente, con <br> feeling global.</p>
-                <div class="col-6">
-                    <figure class="img-fluid logo" ><img src="src/assets/images/rr-logo-p.png" alt="logo r&r"></figure>
-                    <span class="yellow t-center">Austin, Denver, Las Vegas, Los Angeles, Mexico City, Phoenix, <br> Reno, Salt Lake City, Washington DC</span>
+                <div class="container-fluid">
+                    <p class="bigText col-6">Somos una agencia <br> independiente, con <br> feeling global.</p>
+                    <div class="col-6 ">
+                        <figure class="img-fluid logo" ><img src="src/assets/images/rr-logo-p.png" alt="logo r&r"></figure>
+                        <span class="yellow t-center mt-3">Austin, Denver, Las Vegas, Los Angeles, Mexico City, Phoenix, <br> Reno, Salt Lake City, Washington DC</span>
+                    </div>
                 </div>
             </section>
                <!--    sec us -->
-            <section class="doWrp row all-center bg-black ">
-                <div class="container-fluid all-between">
+            <section class="doWrp row bg-black ">
+                <div class="container-fluid">
                     <div class="title col-4">
                         <h2>¿Qué </h2>
                         <h3>Hacemos?</h3>
                     </div>
-                    <ul class="dolist col-4">
+                    <ul class="dolist col-4 col-sm-12">
                         <li>Creacion de marcas</li>
                         <li>Estrategia & planning</li>
                         <li>Digital</li>
                         <li>Creatividad</li>
                     </ul>
-                    <ul class="dolist col-4">
+                    <ul class="dolist col-4 col-sm-12">
                         <li>Producción</li>
                         <li>Medios</li>
                         <li>Relaciones públicas</li>
@@ -138,15 +147,18 @@
                 </div>
             </section>
                <!--    sec contact -->
-            <div id="contact" class="contactWrp container-fluid  row all-center">
-                <p class="col-12 bigText">Contacto</p>
-                <div class="col-6">
-                    <span class="icons email"></span>
-                    <span>dvelasquez@cmvrr.com</span>
-                </div>
-                <div class="col-6">
-                    <span class="icons tel"></span>
-                    <span>5530982950</span>
+            <div id="contact" class="contactWrp row all-center">
+                <p class="container-fluid bigText ">Contacto</p>
+                <div class="container-fluid info">
+                    <div class="col-6">
+                        <span class="icons email"></span>
+                        <span>dvelasquez@cmvrr.com</span>
+                    </div>
+                    <div class="col-6">
+                        <span class="icons tel"></span>
+                        <span>5530982950</span>
+                    </div>
+                    
                 </div>
             </div>
 

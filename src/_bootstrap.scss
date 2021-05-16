@@ -17,6 +17,16 @@
     @media (max-width: 1500px){
         max-width: 1400px;  
     }
+    @media (max-width: $mobile-lg){
+        flex-direction: column;
+    }
+}
+
+.col-sm-12{
+     @media (max-width: $mobile-lg){
+        flex: 0 0 100%  !important;
+        max-width: 100%  !important;
+    }
 }
 
 
@@ -306,8 +316,6 @@
         height: auto;
     }
 }
-
-
 
 
 

@@ -4,7 +4,7 @@ html {
     width: 100%;
     min-height: 100vh;
     font-size: $text-size;
-    font-family: $demi;
+    font-family: $bold;
 
     color: $black;
    
@@ -62,17 +62,19 @@ a {
     position: relative;
     h2{
         font-family: $heavy;
-        font-size: 4em;
+        font-size: 5em;
     text-transform: uppercase;
 
     }
     h3{
         font-family: $grafo;
         color: $yellow;
-        font-size: 3em;
+        font-size: 4em;
         position: absolute;
-    left: 17%;
-    top: 43%;
+    /*left: 17%;
+    top: 43%;*/
+    left: 36%;
+    top: 51%;
     }
     .note{
         width: 80%;
@@ -98,11 +100,15 @@ a {
     font-size: 3em;
     font-family:$bold;
     line-height: 1.2; 
+    position: relative;
     &.happy-text{
+        margin-top: 5%;
         margin-bottom: 5%;
         .people{
-
-            margin-left: 10%;
+            margin-left: 19%;
+            position: absolute;
+            left: 38%;
+            width: 100%;
         }
     }
     @media (max-width: $mobile-lg){

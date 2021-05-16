@@ -1,58 +1,19 @@
-.brandLogo {
-    width: 23%;
-    height: 150px;
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-    display: inline-block;
-    @media (max-width: $mobile-lg){
-        width: 48%;
-        height: 100px;
-    }
-    
-    &.b1 {
-        background-image: url(../src/assets/images/chedraui.png);
-    }
-    &.b2 {
-        background-image: url(../src/assets/images/vegas.png);
-    }
-     &.b3 {
-        background-image: url(../src/assets/images/femsa.png);
-    }
-      &.b4 {
-        background-image: url(../src/assets/images/nikon.png);
-    }
-      &.b5 {
-        background-image: url(../src/assets/images/posadas.png);
-    }
-      &.b6 {
-        background-image: url(../src/assets/images/casa.png);
-    }
-      &.b7 {
-        background-image: url(../src/assets/images/klenex.png);
-    }
-      &.b8 {
-        background-image: url(../src/assets/images/prisa.png);
-    }
-      &.b9 {
-        background-image: url(../src/assets/images/fox.png);
-    }
-      &.b10 {
-        background-image: url(../src/assets/images/uniliver.png);
-    }
-      &.b11 {
-        background-image: url(../src/assets/images/nfl.png);
-    }
-      &.b12 {
-        background-image: url(../src/assets/images/bunge.png);
-    }
-    
-}
+
 
 .videoWrp{
    height: 80vh;
    position: relative;
    display: block;
+   .title{
+       h3{
+            position: absolute;
+        left: 40%;
+        top: 40%;
+        font-size: 5em;
+       }
+
+   }
+
     
   .textureWrp{
      width: 100%;
@@ -88,8 +49,89 @@
 
 
 .brandsWrp{
-   height: 80vh;
+    width: 100%;
+    height: auto;
+    ul{
+        margin-top: 6%;
+    }
+
+      .brandLogo {
+          width: 16%;
+          height: 113px;
+          background-size: contain;
+          background-position: center center;
+          background-repeat: no-repeat;
+          display: inline-block;
+          @media (max-width: $mobile-lg){
+              width: 32%;
+              height: 90px;
+          }
+          
+          &.b1 {
+              background-image: url(../src/assets/images/chedraui.png);
+          }
+          &.b2 {
+              background-image: url(../src/assets/images/vegas.png);
+          }
+           &.b3 {
+              background-image: url(../src/assets/images/femsa.png);
+          }
+            &.b4 {
+              background-image: url(../src/assets/images/nikon.png);
+          }
+            &.b5 {
+              background-image: url(../src/assets/images/posadas.png);
+          }
+            &.b6 {
+              background-image: url(../src/assets/images/casa.png);
+          }
+            &.b7 {
+              background-image: url(../src/assets/images/klenex.png);
+          }
+            &.b8 {
+              background-image: url(../src/assets/images/prisa.png);
+          }
+            &.b9 {
+              background-image: url(../src/assets/images/fox.png);
+          }
+            &.b10 {
+              background-image: url(../src/assets/images/uniliver.png);
+          }
+            &.b11 {
+              background-image: url(../src/assets/images/nfl.png);
+          }
+            &.b12 {
+              background-image: url(../src/assets/images/bunge.png);
+          }
+          
+      }
     
+}
+
+
+
+.brandsVideoWrp {
+    width: 100%;
+    height: auto;
+       padding: 3% 0;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    button{
+      color:#ffff;
+    }
+    .title{
+          margin-bottom: 15%;
+          h3{
+            /*font-size: 3.5em;*/
+            left: 38%;
+            top: 53%;
+          }
+    }
+    .note{
+      color: $yellow;
+      margin-top: 20%;
+    }
 }
 
 .rrWrp{
@@ -97,31 +139,45 @@
   .logo{
     max-width: 290px;
   }
-}
-
-.brandsVideoWrp {
-    height: 80vh;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    button{
-      color:#ffff;
+  .note{
+    margin-top: 3%;
     }
 }
 
+
 .doWrp{
-   height: 50vh;
+    width: 100%;
+   height: auto;
+   padding: 5% 0;
+   .dolist{
+        margin-top: 5%;
+        li{
+            padding: 2% 0;
+        }
+   }
+   .title{
+        h3{
+            /*font-size: 3.5em;*/
+            left: 24%;
+            top: 24%;
+        }
+   }
+
     
 }
 
   .contactWrp{
      height: 50vh;
+     padding: 3% 0;
+     .info{
+      margin-left: 10%;
+     }
 
      .icons{
         display: inline-block;
         width: 73px;
-    height: 55px;
-vertical-align: middle;
+        height: 55px;
+        vertical-align: middle;
         background-size: contain;
         background-position: center center;
         background-repeat: no-repeat;
@@ -138,8 +194,8 @@ vertical-align: middle;
   .arrow{
         display: inline-block;
         width: 32px;
-    margin-top: 3%;
-    height: 35px;
+        margin-top: 3%;
+        height: 35px;
         vertical-align: middle;
         background-size: contain;
         background-position: center center;
