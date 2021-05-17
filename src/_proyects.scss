@@ -3,6 +3,7 @@
 	.videoWrp{
 		.title{
 			/*position: relative;*/
+
 			h2{
 				top: 4%;
 				left: 1%;
@@ -18,6 +19,29 @@
    				left: 23%;
 			}
 		}
+	}
+	.bigText{
+		
+			text-align: left;
+		
+	}
+
+	.videosListWrp{
+		text-transform: uppercase;
+	}
+	.texture-line{
+		width: 100%;
+      height: 25px;
+      display:  block;
+      margin: 5% 0;
+       background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      display: inline-block;
+    background-image: url(../src/assets/images/texture.png);
+	}
+	p{
+		padding: 1% 0;
 	}
 	
 }
