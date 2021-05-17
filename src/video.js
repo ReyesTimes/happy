@@ -1,4 +1,4 @@
-export default function initVideo(setCounter) {
+export default function initVideo(fn) {
   const videos = document.querySelectorAll(".video");
 
   videos.forEach((videoLi) => {
@@ -8,14 +8,21 @@ export default function initVideo(setCounter) {
     const id = videoLi.dataset.id;
 
     btn.addEventListener("click", function () {
-      video.currentTime = 0;
-      video.play();
-
-      btn.style.opacity = "0";
-      overlay.style.opacity = "0";
+      if (!isVideoPlaying(video)) {
+        video.play();
+        btn.style.opacity = "0";
+        overlay.style.opacity = "0";
+      } else {
+        video.pause();
+        btn.style.opacity = "1";
+        overlay.style.opacity = "1";
+      }
 
       restartStylesVideo(id);
-      setCounter(id);
+
+      if (fn) {
+        fn(id);
+      }
     });
   });
 
@@ -33,4 +40,12 @@ export default function initVideo(setCounter) {
       }
     });
   }
+
+  const isVideoPlaying = (video) =>
+    !!(
+      video.currentTime > 0 &&
+      !video.paused &&
+      !video.ended &&
+      video.readyState > 2
+    );
 }

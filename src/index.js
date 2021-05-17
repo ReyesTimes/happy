@@ -4,7 +4,7 @@ import initOpenMenu from "./menu";
 import "./example.scss";
 
 (function () {
-  document.addEventListener("DOMContentLoaded", function (event) {
+  document.addEventListener("DOMContentLoaded", function () {
     const videosListWrp = document.querySelector(".videosListWrp");
     const leftButton = document.querySelector(".leftButton");
     const rightButton = document.querySelector(".rightButton");
