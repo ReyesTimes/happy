@@ -4,9 +4,12 @@
   overflow-y: hidden;
   scroll-behavior: smooth;
   .videosListWrp {
-    width: 180%;
-    display: flex;
-    transition: 250ms all ease-in;
+    width: 460%;
+    
+     @media (max-width: $mobile-lg) {
+        position: relative;
+        height: 100%;
+      }
     .video {
       display: inline-block;
       /* width: 7%; */

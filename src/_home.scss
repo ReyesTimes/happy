@@ -5,11 +5,21 @@
    position: relative;
    display: block;
    .title{
+        h2{
+             @media (max-width: $mobile-lg) {
+           font-size: 2em;
+          }
+        }
+
        h3{
             position: absolute;
-        left: 40%;
+        left: 37%;
         top: 40%;
         font-size: 5em;
+        @media (max-width: $mobile-lg) {
+           font-size: 2em;
+           left: 20%;
+          }
        }
 
    }
@@ -29,20 +39,38 @@
     background-image: url(../src/assets/images/texture.png);
         background-color: $black;
     opacity: 0.2;
-    
+     
   }
-   .black-block{
-      width: 30%;
-    height: 27%;
+  .titleTexture{
+    width: 100%;
+    max-width: 573px;
     position: absolute;
     top: 50%;
-    left: 0;
-    z-index: 4;
-        background-color: $black;
-            opacity: .8;
-        h2{
+    left: 10%;
+    z-index: 5;
+      @media (max-width: $mobile-lg) {
+            max-width: 480px;
+            position: absolute;
+            top: 50%;
+            left: 0;
+        }
+
+
+    h2{
         color: #fff;
       }
+  }
+   .black-block{
+    
+    width: 32%;
+    height: 45%;
+    position: absolute;
+    top: 38%;
+    left: 0;
+    z-index: 4;
+        background-color: #1D1D1E;
+    opacity: .7;
+       
     }
 }
 
@@ -51,6 +79,7 @@
 .brandsWrp{
     width: 100%;
     height: auto;
+    margin-top: 5%;
     ul{
         margin-top: 6%;
     }
@@ -64,7 +93,7 @@
           display: inline-block;
           @media (max-width: $mobile-lg){
               width: 32%;
-              height: 90px;
+              height: 65px;
           }
           
           &.b1 {
@@ -117,6 +146,9 @@
     justify-content: center;
     justify-items: center;
     align-items: center;
+
+
+
     button{
       color:#ffff;
     }
@@ -136,11 +168,19 @@
 
 .rrWrp{
     height: 80vh;
+    @media (max-width: $mobile-lg) {
+         height: 60vh;
+    }
   .logo{
     max-width: 290px;
+    @media (max-width: $mobile-lg) {
+         max-width: 200px;
+    }
   }
   .note{
     margin-top: 3%;
+    font-size: 1.3em;
+
     }
 }
 
@@ -149,8 +189,15 @@
     width: 100%;
    height: auto;
    padding: 5% 0;
+   position: relative;
    .dolist{
         margin-top: 5%;
+        font-size: 1.3em;
+        @media (max-width: $mobile-lg) {
+            font-size: .9em;
+            text-align: center;
+            margin-top: 12%;
+        }
         li{
             padding: 2% 0;
         }
@@ -160,6 +207,10 @@
             /*font-size: 3.5em;*/
             left: 24%;
             top: 24%;
+            @media (max-width: $mobile-lg) {
+                left: 24%;
+                top: 50%;
+            }
         }
    }
 
@@ -169,8 +220,15 @@
   .contactWrp{
      height: 50vh;
      padding: 3% 0;
+     @media (max-width: $mobile-lg) {
+           height: 30vh;
+      }
      .info{
       margin-left: 10%;
+      font-size: 1.5em;
+      @media (max-width: $mobile-lg) {
+        font-size: 1em;
+      }
      }
 
      .icons{
@@ -181,6 +239,10 @@
         background-size: contain;
         background-position: center center;
         background-repeat: no-repeat;
+        @media (max-width: $mobile-lg) {
+            width: 40px;
+            height: 70px;
+         }
 
            &.tel{
             background-image: url(../src/assets/images/cel.svg);
@@ -200,6 +262,9 @@
         background-size: contain;
         background-position: center center;
         background-repeat: no-repeat;
+        @media (max-width: $mobile-lg) {
+            display: none;
+        }
 
 
           &.leftButton{
@@ -211,4 +276,17 @@
           }
   }
 
+    .textureWrp-sec{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        /* z-index: 1; */
+        background-image: url(../src/assets/images/texture.png);
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        display: inline-block;
+        opacity: 0.2;
 
+ 
+    }
