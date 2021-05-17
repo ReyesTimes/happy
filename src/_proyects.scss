@@ -1,0 +1,23 @@
+#proyects{
+	text-align: center;
+	.videoWrp{
+		.title{
+			/*position: relative;*/
+			h2{
+				top: 4%;
+				left: 1%;
+				span{
+					font-size: .8em;
+    				position: absolute;
+    				top: 75%;
+				}
+			}
+			h3{
+				position: absolute;
+    			top: 100%;
+   				left: 23%;
+			}
+		}
+	}
+	
+}
