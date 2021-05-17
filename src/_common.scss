@@ -6,10 +6,13 @@ html {
     font-size: $text-size;
     font-family: $bold;
 
+
     color: $black;
    
 }
-
+html{
+     scroll-behavior: smooth;
+}
 body,
 main {
     display: flex;
@@ -64,6 +67,10 @@ a {
         font-family: $heavy;
         font-size: 5em;
     text-transform: uppercase;
+    @media (max-width: $mobile-lg){
+              font-size: 3em;
+          }
+
 
     }
     h3{
@@ -71,10 +78,14 @@ a {
         color: $yellow;
         font-size: 4em;
         position: absolute;
-    /*left: 17%;
-    top: 43%;*/
-    left: 36%;
-    top: 51%;
+        left: 36%;
+        top: 51%;
+     @media (max-width: $mobile-lg){
+      font-size: 2.5em;
+      left: 20%;
+      top: 60%;
+    }
+
     }
     .note{
         width: 80%;
@@ -101,6 +112,9 @@ a {
     font-family:$bold;
     line-height: 1.2; 
     position: relative;
+     @media (max-width: $mobile-lg){
+        margin-bottom: 10%;
+     }
     &.happy-text{
         margin-top: 5%;
         margin-bottom: 5%;
@@ -109,6 +123,11 @@ a {
             position: absolute;
             left: 38%;
             width: 100%;
+            @media (max-width: $mobile-lg){
+                margin-left: 5%;
+            position: relative;
+            left: 0;
+            }
         }
     }
     @media (max-width: $mobile-lg){
@@ -127,4 +146,8 @@ a {
     justify-items: center;
     align-content: center;
     align-items: center;
+}
+
+.active{
+    color:$yellow;
 }
