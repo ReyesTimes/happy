@@ -1,5 +1,5 @@
-import initVideo from "./video";
-import initOpenMenu from "./menu";
+import initVideo from "./js/video";
+import initOpenMenu from "./js/menu";
 
 import "./example.scss";
 
