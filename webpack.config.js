@@ -8,7 +8,7 @@ module.exports = {
     projects: "./src/projects.js",
   },
   output: {
-    filename: "[name].js",
+    filename: "[name].min.js",
     path: path.resolve(__dirname, "dist"),
     clean: true,
   },
