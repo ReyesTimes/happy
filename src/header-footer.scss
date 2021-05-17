@@ -1,4 +1,3 @@
-
 header,
 footer {
   background-color: $black;
@@ -66,9 +65,9 @@ nav {
       margin: 0 2%;
       @media (max-width: $mobile-lg) {
         text-align: center;
-    font-size: 2em;
-    padding: 3% 0;
-    margin: 0 5%;
+        font-size: 2em;
+        padding: 3% 0;
+        margin: 0 5%;
       }
     }
   }
@@ -78,30 +77,27 @@ nav {
 }
 
 @media (max-width: $mobile-lg) {
-  .menu{
+  .menu {
     display: none;
   }
-  .menu.hide {
-    display: none;
+  .menu.show {
+    display: block;
   }
 }
 
 footer {
   height: 25vh;
-  p{
-    @media (max-width: $mobile-lg){
-        font-size: 0.7em;
-
-    } 
-
+  p {
+    @media (max-width: $mobile-lg) {
+      font-size: 0.7em;
+    }
   }
   @media (max-width: $mobile-lg) {
-   height: 100%;
+    height: 100%;
   }
-  .logo{
+  .logo {
     @media (max-width: $mobile-lg) {
-    max-width: 160px;
-
+      max-width: 160px;
     }
   }
 }
