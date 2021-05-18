@@ -9,20 +9,19 @@ export default function initVideo(fn) {
     const overlay = videoLi.querySelector(".overlay");
     const id = videoLi.dataset.id;
 
+    addFinishedEvnt(video, btn, overlay);
     btn.addEventListener("click", function () {
       if (!isVideoPlaying(video)) {
         video.play();
-        btn.style.opacity = "0";
-        overlay.style.opacity = "0";
+        showActionVideo(btn, overlay, false);
       } else {
         video.pause();
-        btn.style.opacity = "1";
-        overlay.style.opacity = "1";
+        showActionVideo(btn, overlay);
       }
 
       restartStylesVideo(id);
 
-      if (fn & !isMobile()) {
+      if (fn && !isMobile()) {
         fn(id);
       }
     });
@@ -35,19 +34,37 @@ export default function initVideo(fn) {
         const video = videoLi.querySelector("video");
         const overlay = videoLi.querySelector(".overlay");
 
-        overlay.style.opacity = "1";
-        btn.style.opacity = "1";
+        showActionVideo(btn, overlay);
         video.pause();
         video.currentTime = 0;
       }
     });
   }
+}
 
-  const isVideoPlaying = (video) =>
-    !!(
-      video.currentTime > 0 &&
-      !video.paused &&
-      !video.ended &&
-      video.readyState > 2
-    );
+function isVideoPlaying(video) {
+  return !!(
+    video.currentTime > 0 &&
+    !video.paused &&
+    !video.ended &&
+    video.readyState > 2
+  );
+}
+
+function showActionVideo(btn, overlay, show = true) {
+  const opacity = show ? "1" : "0";
+  overlay.style.opacity = opacity;
+  btn.style.opacity = opacity;
+}
+
+function addFinishedEvnt(video, btn, overlay) {
+  video.addEventListener(
+    "ended",
+    function () {
+      showActionVideo(btn, overlay);
+      video.currentTime = 0;
+      video.pause();
+    },
+    false
+  );
 }
