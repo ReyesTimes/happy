@@ -84,7 +84,7 @@
 .brandsWrp{
     width: 100%;
     height: auto;
-    margin-top: 5%;
+    margin-top: 3%;
     ul{
         margin-top: 6%;
     }
@@ -172,7 +172,10 @@
 }
 
 .rrWrp{
-    height: 80vh;
+    height: 55vh;
+    @media (max-width: 1350px) {
+         height: 80vh;
+    }
     @media (max-width: $mobile-lg) {
          height: 60vh;
     }
@@ -239,8 +242,11 @@
 }
 
   .contactWrp{
-     height: 50vh;
+      height: 40vh;
      padding: 3% 0;
+     @media (max-width: 1350px) {
+           height: 50vh;;
+    }
      @media (max-width: $mobile-lg) {
            height: 30vh;
       }
@@ -249,6 +255,12 @@
       font-size: 1.5em;
       @media (max-width: $mobile-lg) {
         font-size: 1em;
+      }
+      a{
+        color: $black;
+        &:hover{
+          color:$black;
+        }
       }
      }
 
