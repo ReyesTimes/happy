@@ -75,7 +75,7 @@
 .brandsWrp {
   width: 100%;
   height: auto;
-  margin-top: 5%;
+  margin-top: 3%;
   ul {
     margin-top: 6%;
   }
@@ -92,6 +92,8 @@
       height: 65px;
     }
 
+    &.b1 {
+      background-image: url(../src/assets/images/chedraui.png);
     }
     &.b2 {
       background-image: url(../src/assets/images/vegas.png);
@@ -154,6 +156,15 @@
   }
 }
 
+.rrWrp {
+  height: 55vh;
+  @media (max-width: 1350px) {
+    height: 80vh;
+  }
+  @media (max-width: $mobile-lg) {
+    height: 60vh;
+  }
+  .logo {
     max-width: 290px;
     @media (max-width: $mobile-lg) {
       max-width: 200px;
@@ -188,6 +199,9 @@
       padding: 2% 0;
     }
 
+    &.part2 {
+      @media (max-width: $mobile-lg) {
+        margin-top: 0;
       }
     }
   }
@@ -203,10 +217,16 @@
         left: 24%;
         top: 50%;
       }
-     .icons{
+    }
+  }
+}
+
 .contactWrp {
-  height: 50vh;
+  height: 40vh;
   padding: 3% 0;
+  @media (max-width: 1350px) {
+    height: 50vh;
+  }
   @media (max-width: $mobile-lg) {
     height: 30vh;
   }
@@ -215,6 +235,12 @@
     font-size: 1.5em;
     @media (max-width: $mobile-lg) {
       font-size: 1em;
+    }
+    a {
+      color: $black;
+      &:hover {
+        color: $black;
+      }
     }
   }
 

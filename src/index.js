@@ -1,7 +1,7 @@
 import initVideo from "./js/video";
 import initOpenMenu from "./js/menu";
 
-import "./example.scss";
+import "./main.scss";
 
 (function () {
   document.addEventListener("DOMContentLoaded", function () {
