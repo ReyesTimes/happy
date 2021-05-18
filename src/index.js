@@ -9,21 +9,23 @@ import "./main.scss";
     const leftButton = document.querySelector(".leftButton");
     const rightButton = document.querySelector(".rightButton");
     const filler = document.querySelector(".filler");
-
+    let max_carrousel_moves;
+    let fillerPercentage;
     let counter = 1;
 
+    getMaxCarrouselMoves();
     initVideo(setCounter);
     initEvnts();
     initOpenMenu();
 
     function setCounter(n) {
-      if (counter !== parseInt(n) && n < 4) {
+      if (counter !== parseInt(n) && n < max_carrousel_moves) {
         const side = counter < n ? "left" : "right";
         const width = getVideoWidth();
         counter = parseInt(n);
 
         translateContainer(width, side);
-        changeFillerWidth(filler, counter);
+        changeFillerWidth(filler, counter, fillerPercentage);
       }
     }
 
@@ -48,18 +50,21 @@ import "./main.scss";
       window.addEventListener("resize", function () {
         videosListWrp.style.transform = `translateX(0px)`;
         filler.style.width = "25%";
+        leftButton.classList.add("opacity");
+        rightButton.classList.remove("opacity");
         counter = 1;
+
+        getMaxCarrouselMoves();
       });
     }
 
     function moveContainer(side) {
-      if (isAlowedToMove(side, counter)) {
+      if (isAlowedToMove(side, counter, max_carrousel_moves)) {
         const width = getVideoWidth();
         if (side === "left") {
           counter = counter - 1;
           rightButton.classList.remove("opacity");
 
-          console.log(counter);
           if (counter === 1) {
             leftButton.classList.add("opacity");
           }
@@ -76,16 +81,29 @@ import "./main.scss";
           }
         }
 
-        changeFillerWidth(filler, counter);
+        changeFillerWidth(filler, counter, fillerPercentage);
+      }
+    }
+
+    function getMaxCarrouselMoves() {
+      if (window.innerWidth < 1020) {
+        max_carrousel_moves = 5;
+        fillerPercentage = 20;
+      } else {
+        max_carrousel_moves = 4;
+        fillerPercentage = 25;
       }
     }
   });
 })();
 
-function changeFillerWidth(filler, counter) {
-  filler.style.width = `${counter * 25}%`;
+function changeFillerWidth(filler, counter, fillerPercentage) {
+  filler.style.width = `${counter * fillerPercentage}%`;
 }
 
-function isAlowedToMove(side, counter) {
-  return (side === "left" && counter > 1) || (side === "right" && counter < 5);
+function isAlowedToMove(side, counter, max_carrousel_moves) {
+  return (
+    (side === "left" && counter > 1) ||
+    (side === "right" && counter < max_carrousel_moves)
+  );
 }
