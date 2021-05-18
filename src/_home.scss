@@ -1,276 +1,324 @@
-.videoWrp {
+
+.videoWrp{
   /* height: 80vh;*/
-  position: relative;
-  display: block;
-  .title {
+   position: relative;
+   display: block;
+   .title{
     @media (max-width: $mobile-lg) {
-      display: none;
+        display: none;
     }
-    h2 {
-      @media (max-width: $mobile-lg) {
-        font-size: 2em;
-      }
-    }
+        h2{
+             @media (max-width: $mobile-lg) {
+           font-size: 2em;
+          }
+        }
 
-    h3 {
+       h3{
+            position: absolute;
+        left: 37%;
+        top: 40%;
+        font-size: 5em;
+        @media (max-width: $mobile-lg) {
+           font-size: 2em;
+           left: 20%;
+          }
+       }
+
+   }
+
+    
+  .textureWrp{
+     width: 100%;
+      height: 90%;
+      display:  block;
       position: absolute;
-      left: 37%;
-      top: 40%;
-      font-size: 5em;
-      @media (max-width: $mobile-lg) {
-        font-size: 2em;
-        left: 20%;
-      }
-    }
-  }
+      z-index: 2;
 
-  .textureWrp {
-    width: 100%;
-    height: 90%;
-    display: block;
-    position: absolute;
-    z-index: 2;
-
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    display: inline-block;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      display: inline-block;
     background-image: url(../src/assets/images/texture.png);
-    background-color: rgba(0, 0, 0, 0.4);
-    opacity: 0.2;
+      background-color: rgba(0,0,0,.4);
+    opacity: .2;
   }
-  .titleTexture {
+  .titleTexture{
     width: 100%;
     max-width: 573px;
     position: absolute;
     top: 50%;
     left: 10%;
     z-index: 5;
-    @media (max-width: $mobile-lg) {
-      max-width: 480px;
-      position: absolute;
-      top: 50%;
-      left: 0;
-    }
+      @media (max-width: $mobile-lg) {
+            max-width: 480px;
+            position: absolute;
+            top: 50%;
+            left: 0;
+        }
 
-    h2 {
-      color: #fff;
-    }
+
+    h2{
+        color: #fff;
+      }
   }
-  .black-block {
+   .black-block{
+    
     width: 32%;
     height: 45%;
     position: absolute;
     top: 38%;
     left: 0;
     z-index: 4;
-    background-color: #1d1d1e;
-    opacity: 0.7;
-    @media (max-width: $mobile-lg) {
-      display: none;
+        background-color: #1D1D1E;
+    opacity: .7;
+     @media (max-width: $mobile-lg) {
+        display: none;
     }
-  }
+       
+    }
 }
 
-.brandsWrp {
-  width: 100%;
-  height: auto;
-  margin-top: 5%;
-  ul {
-    margin-top: 6%;
-  }
 
-  .brandLogo {
-    width: 16%;
-    height: 113px;
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-    display: inline-block;
-    @media (max-width: $mobile-lg) {
-      width: 32%;
-      height: 65px;
+
+.brandsWrp{
+    width: 100%;
+    height: auto;
+    margin-top: 3%;
+    ul{
+        margin-top: 6%;
     }
 
-    }
-    &.b2 {
-      background-image: url(../src/assets/images/vegas.png);
-    }
-    &.b3 {
-      background-image: url(../src/assets/images/femsa.png);
-    }
-    &.b4 {
-      background-image: url(../src/assets/images/nikon.png);
-    }
-    &.b5 {
-      background-image: url(../src/assets/images/posadas.png);
-    }
-    &.b6 {
-      background-image: url(../src/assets/images/casa.png);
-    }
-    &.b7 {
-      background-image: url(../src/assets/images/klenex.png);
-    }
-    &.b8 {
-      background-image: url(../src/assets/images/prisa.png);
-    }
-    &.b9 {
-      background-image: url(../src/assets/images/fox.png);
-    }
-    &.b10 {
-      background-image: url(../src/assets/images/uniliver.png);
-    }
-    &.b11 {
-      background-image: url(../src/assets/images/nfl.png);
-    }
-    &.b12 {
-      background-image: url(../src/assets/images/bunge.png);
-    }
-  }
+      .brandLogo {
+          width: 16%;
+          height: 113px;
+          background-size: contain;
+          background-position: center center;
+          background-repeat: no-repeat;
+          display: inline-block;
+          @media (max-width: $mobile-lg){
+              width: 32%;
+              height: 65px;
+          }
+          
+          &.b1 {
+              background-image: url(../src/assets/images/chedraui.png);
+          }
+          &.b2 {
+              background-image: url(../src/assets/images/vegas.png);
+          }
+           &.b3 {
+              background-image: url(../src/assets/images/femsa.png);
+          }
+            &.b4 {
+              background-image: url(../src/assets/images/nikon.png);
+          }
+            &.b5 {
+              background-image: url(../src/assets/images/posadas.png);
+          }
+            &.b6 {
+              background-image: url(../src/assets/images/casa.png);
+          }
+            &.b7 {
+              background-image: url(../src/assets/images/klenex.png);
+          }
+            &.b8 {
+              background-image: url(../src/assets/images/prisa.png);
+          }
+            &.b9 {
+              background-image: url(../src/assets/images/fox.png);
+          }
+            &.b10 {
+              background-image: url(../src/assets/images/uniliver.png);
+          }
+            &.b11 {
+              background-image: url(../src/assets/images/nfl.png);
+          }
+            &.b12 {
+              background-image: url(../src/assets/images/bunge.png);
+          }
+          
+      }
+    
 }
+
+
 
 .brandsVideoWrp {
-  width: 100%;
-  height: auto;
-  padding: 3% 0;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
+    width: 100%;
+    height: auto;
+       padding: 3% 0;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
 
-  button {
-    color: #ffff;
-  }
-  .title {
-    margin-bottom: 15%;
-    h3 {
-      /*font-size: 3.5em;*/
-      left: 38%;
-      top: 53%;
+
+
+    button{
+      color:#ffff;
     }
-  }
-  .note {
-    color: $yellow;
-    margin-top: 20%;
-  }
+    .title{
+          margin-bottom: 15%;
+          h3{
+            /*font-size: 3.5em;*/
+            left: 38%;
+            top: 53%;
+          }
+    }
+    .note{
+      color: $yellow;
+      margin-top: 20%;
+    }
 }
 
+.rrWrp{
+    height: 55vh;
+    @media (max-width: 1350px) {
+         height: 80vh;
+    }
+    @media (max-width: $mobile-lg) {
+         height: 60vh;
+    }
+  .logo{
     max-width: 290px;
     @media (max-width: $mobile-lg) {
-      max-width: 200px;
+         max-width: 200px;
     }
   }
-  .note {
+  .note{
     margin-top: 3%;
     font-size: 1.3em;
-  }
-  span {
-    br {
-      @media (max-width: $mobile-lg) {
-        display: none;
+
+    }
+    span{
+      br{
+        @media (max-width: $mobile-lg) {
+          display: none;
+        }
       }
     }
-  }
 }
 
-.doWrp {
-  width: 100%;
-  height: auto;
-  padding: 5% 0;
-  .dolist {
-    margin-top: 5%;
-    font-size: 1.3em;
-    @media (max-width: $mobile-lg) {
-      font-size: 0.9em;
-      text-align: center;
-      margin-top: 12%;
-    }
-    li {
-      padding: 2% 0;
-    }
 
-      }
+.doWrp{
+    width: 100%;
+   height: auto;
+   padding: 5% 0;
+   .dolist{
+        margin-top: 5%;
+        font-size: 1.3em;
+        @media (max-width: $mobile-lg) {
+            font-size: .9em;
+            text-align: center;
+            margin-top: 12%;
+        }
+        li{
+            padding: 2% 0;
+        }
+
+        &.part2{
+            
+            @media (max-width: $mobile-lg) {
+              margin-top: 0;
+            }
+        }
+   }
+   .title{
+        position: relative;
+        top: 0;
+        left: 0;
+        h3{
+            /*font-size: 3.5em;*/
+            left: 24%;
+            top: 24%;
+            @media (max-width: $mobile-lg) {
+                left: 24%;
+                top: 50%;
+            }
+        }
+   }
+
+    
+}
+
+  .contactWrp{
+      height: 40vh;
+     padding: 3% 0;
+     @media (max-width: 1350px) {
+           height: 50vh;;
     }
-  }
-  .title {
-    position: relative;
-    top: 0;
-    left: 0;
-    h3 {
-      /*font-size: 3.5em;*/
-      left: 24%;
-      top: 24%;
-      @media (max-width: $mobile-lg) {
-        left: 24%;
-        top: 50%;
+     @media (max-width: $mobile-lg) {
+           height: 30vh;
       }
+     .info{
+      margin-left: 10%;
+      font-size: 1.5em;
+      @media (max-width: $mobile-lg) {
+        font-size: 1em;
+      }
+      a{
+        color: $black;
+        &:hover{
+          color:$black;
+        }
+      }
+     }
+
      .icons{
-.contactWrp {
-  height: 50vh;
-  padding: 3% 0;
-  @media (max-width: $mobile-lg) {
-    height: 30vh;
+        display: inline-block;
+        width: 73px;
+        height: 55px;
+        vertical-align: middle;
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        @media (max-width: $mobile-lg) {
+            width: 40px;
+            height: 70px;
+         }
+
+           &.tel{
+            background-image: url(../src/assets/images/cel.svg);
+          }
+          &.email{
+            background-image: url(../src/assets/images/mail.svg);
+          }
+     } 
   }
-  .info {
-    margin-left: 10%;
-    font-size: 1.5em;
-    @media (max-width: $mobile-lg) {
-      font-size: 1em;
+  
+  .arrow{
+        display: inline-block;
+        width: 32px;
+        margin-top: 3%;
+        height: 35px;
+        vertical-align: middle;
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        @media (max-width: $mobile-lg) {
+            display: none;
+        }
+
+
+          &.leftButton{
+            background-image: url(../src/assets/images/arrow-l.svg);
+          }
+
+          &.rightButton{
+            background-image: url(../src/assets/images/arrow-r.svg);
+          }
+  }
+
+    .textureWrp-sec{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        /* z-index: 1; */
+        background-image: url(../src/assets/images/texture.png);
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        display: inline-block;
+        opacity: 0.2;
+
+ 
     }
-  }
-
-  .icons {
-    display: inline-block;
-    width: 73px;
-    height: 55px;
-    vertical-align: middle;
-    background-size: contain;
-    background-position: center center;
-    background-repeat: no-repeat;
-    @media (max-width: $mobile-lg) {
-      width: 40px;
-      height: 70px;
-    }
-
-    &.tel {
-      background-image: url(../src/assets/images/cel.svg);
-    }
-    &.email {
-      background-image: url(../src/assets/images/mail.svg);
-    }
-  }
-}
-
-.arrow {
-  display: inline-block;
-  width: 32px;
-  margin-top: 3%;
-  height: 35px;
-  vertical-align: middle;
-  background-size: contain;
-  background-position: center center;
-  background-repeat: no-repeat;
-  @media (max-width: $mobile-lg) {
-    display: none;
-  }
-
-  &.leftButton {
-    background-image: url(../src/assets/images/arrow-l.svg);
-  }
-
-  &.rightButton {
-    background-image: url(../src/assets/images/arrow-r.svg);
-  }
-}
-
-.textureWrp-sec {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  /* z-index: 1; */
-  background-image: url(../src/assets/images/texture.png);
-  background-size: contain;
-  background-position: center center;
-  background-repeat: no-repeat;
-  display: inline-block;
-  opacity: 0.2;
-}
