@@ -194,6 +194,7 @@
       font-size: 0.9em;
       text-align: center;
       margin-top: 12%;
+
     }
     li {
       padding: 2% 0;
@@ -214,6 +215,7 @@
       left: 24%;
       top: 24%;
       @media (max-width: $mobile-lg) {
+        position: absolute;
         left: 24%;
         top: 50%;
       }
