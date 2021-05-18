@@ -16,12 +16,6 @@ import "./main.scss";
     initEvnts();
     initOpenMenu();
 
-    function isAlowedToMove(side, counter) {
-      return (
-        (side === "left" && counter > 1) || (side === "right" && counter < 3)
-      );
-    }
-
     function setCounter(n) {
       if (counter !== parseInt(n) && n < 4) {
         const side = counter < n ? "left" : "right";
@@ -29,7 +23,7 @@ import "./main.scss";
         counter = parseInt(n);
 
         translateContainer(width, side);
-        filler.style.width = `${counter * 33.33333333}%`;
+        changeFillerWidth(filler, counter);
       }
     }
 
@@ -53,7 +47,7 @@ import "./main.scss";
 
       window.addEventListener("resize", function () {
         videosListWrp.style.transform = `translateX(0px)`;
-        filler.style.width = "33%";
+        filler.style.width = "25%";
         counter = 1;
       });
     }
@@ -63,16 +57,35 @@ import "./main.scss";
         const width = getVideoWidth();
         if (side === "left") {
           counter = counter - 1;
+          rightButton.classList.remove("opacity");
+
+          console.log(counter);
+          if (counter === 1) {
+            leftButton.classList.add("opacity");
+          }
         }
 
         translateContainer(width, side);
 
         if (side === "right") {
           counter = counter + 1;
+          leftButton.classList.remove("opacity");
+
+          if (counter === 3) {
+            rightButton.classList.add("opacity");
+          }
         }
 
-        filler.style.width = `${counter * 33.33333333}%`;
+        changeFillerWidth(filler, counter);
       }
     }
   });
 })();
+
+function changeFillerWidth(filler, counter) {
+  filler.style.width = `${counter * 25}%`;
+}
+
+function isAlowedToMove(side, counter) {
+  return (side === "left" && counter > 1) || (side === "right" && counter < 5);
+}
