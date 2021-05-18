@@ -68,12 +68,18 @@ nav {
         font-size: 2em;
         padding: 3% 0;
         margin: 0 5%;
+        display: block;
       }
     }
   }
   .logo {
     max-width: 150px;
+    width: 150px;
+    height: auto;
   }
+}
+.select{
+  color: $yellow;
 }
 
 @media (max-width: $mobile-lg) {
@@ -96,6 +102,8 @@ footer {
     height: 100%;
   }
   .logo {
+    width: 260px;
+    height: auto;
     @media (max-width: $mobile-lg) {
       max-width: 160px;
     }
