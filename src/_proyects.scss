@@ -37,6 +37,13 @@
   .videosListWrp {
     text-transform: uppercase;
   }
+  .rrWrp{
+    &.proyecSec{
+      @media (max-width: $mobile-lg) {
+      height: 45vh;
+    }
+    }
+  }
   .texture-line {
     width: 100%;
     height: 25px;
