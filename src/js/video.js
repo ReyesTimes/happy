@@ -1,3 +1,5 @@
+import isMobile from "./isMobile";
+
 export default function initVideo(fn) {
   const videos = document.querySelectorAll(".video");
 
@@ -20,7 +22,7 @@ export default function initVideo(fn) {
 
       restartStylesVideo(id);
 
-      if (fn) {
+      if (fn & !isMobile()) {
         fn(id);
       }
     });
