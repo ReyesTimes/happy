@@ -131,6 +131,15 @@
      &.b13 {
       background-image: url(../src/assets/images/dentalia.png);
     }
+    &.b14 {
+      background-image: url(../src/assets/images/mexa.png);
+    }
+    &.b15 {
+      background-image: url(../src/assets/images/pwc.png);
+    }
+    &.b16 {
+      background-image: url(../src/assets/images/kaiser.png);
+    }
   }
 }
 
@@ -168,9 +177,9 @@
     height: 60vh;
   }
   .logo {
-    max-width: 290px;
+    max-width: 400px;
     @media (max-width: $mobile-lg) {
-      max-width: 200px;
+      max-width: 240px;
     }
   }
   .note {
